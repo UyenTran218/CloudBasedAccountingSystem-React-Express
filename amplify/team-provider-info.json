@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-accounting-dev-135208-authRole",
+      "UnauthRoleArn": "arn:aws:iam::177868700406:role/amplify-accounting-dev-135208-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::177868700406:role/amplify-accounting-dev-135208-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-accounting-dev-135208-deployment",
+      "UnauthRoleName": "amplify-accounting-dev-135208-unauthRole",
+      "StackName": "amplify-accounting-dev-135208",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:177868700406:stack/amplify-accounting-dev-135208/aa9eb670-203f-11ed-b2e0-06ac20319d9a",
+      "AmplifyAppId": "d338owhnv5e3za"
+    },
+    "categories": {
+      "auth": {
+        "accounting462a2c2d": {}
+      }
+    }
+  }
+}

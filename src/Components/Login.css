@@ -1,0 +1,31 @@
+.tota {
+    background-color: rgb(246, 245, 248);
+    background-size: cover;
+    padding: auto;
+}
+.form {
+    background-color: rgb(153, 241, 251);
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    align-content: center;
+    
+}
+.input-container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10pt;
+    
+    
+}
+.button {
+    background-color: rgb(180, 180, 255);
+    text-decoration: aliceblue;
+    border-radius: 10px;
+}
+.input-container{
+  padding: 5px;
+    
+}
+.col-3{
+    margin-left: 50%;
+}
