@@ -36,16 +36,3 @@ The log page shows activity logs of the system containing information about user
 
 The report page shows vital statistics on business operations. The first functionality that the page has is the CSV file export. Only users with permission can access the report page and export report files. Users can select a category of the records to download all the records belonging to the selected category. They can also filter records by selecting a date range when the records are entered into the system. 
 
-### Navigation Menu 
-
-The navigation menu on the top of the pages allows users to navigate through the system smoothly and easily. The menu has the following items: 
-
-Home – Navigates the user to the Home Page. 
-
-Add Item – Navigates the user to Add Item Page. 
-
-Help – Navigates the user to Help Page. 
-
-Report – Navigates the user to Report Page 
-
-Manage User – Navigates the user to the Log Page.  
