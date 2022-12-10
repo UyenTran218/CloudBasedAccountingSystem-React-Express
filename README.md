@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Accounting System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Adding a new user 
 
-## Available Scripts
+To add a new user to the Birkentech Accounting System, the system administrator needs to add the user to the AWS (Amazon Web Services) Cognito User Pool and select the appropriate User Group (Admin, Manager, or Data Entry staff) for that user. The user will then receive the mail in the email provided with the username and temporary password.  
 
-In the project directory, you can run:
+### Accessing the accounting system 
 
-### `npm start`
+The first time a user accesses the website, they will login with their temporary username and password. The system will automatically ask the user to reset the password so that they can use their own credentials in the next logins. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home Page 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This will be the first page users see after logging into the system. It shows users a list of the latest 100 records entered in the system. The page provides search-by-keyword functionality and filter by category for convenient record searching. Beside basic details such as ID, Category, Subcategory, Quarter, etc., each record row also contains 2 options, ‘Edit’ and ‘Detail’. The ‘Edit’ button allows the user to edit the record details, and the ‘Detail’ button opens the detail page, which allows the user to see more granular details of that record.  
 
-### `npm test`
+### Edit Page 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users with permission can edit the record details on this page by selecting the ‘Edit’ button on a record row shown on Home Page. On the edit record form, the fields are prefilled with the record’s details from the database. Users can change the record details, update a new receipt file, and click the ‘Submit’ button. Users are then asked to confirm the updated details to ensure the entered information is correct before submitting it. 
 
-### `npm run build`
+### Detail Page 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The detail page shows details of a particular record containing all details recorded into the system. The page also contains a ‘Download PDF’ button that allows the user to download the details of a particular record in the pdf format, which will enable file sharing safely and easily. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Add Item 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Users can add new records to the system by selecting ‘Add Item’ option from the navigation menu at the top of the pages. Users need to fill in the form with required information, attach the receipt file, select submit and review the entered details before adding it to the database.
 
-### `npm run eject`
+### Help Page 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The help page gives the user accessibility to contact someone whenever any issue arises. This page shows the email of the administrator so that users can contact them with the issues they are facing.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Log Page 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The log page shows activity logs of the system containing information about users’ interactions in the system. The username is auto retrieved from AWS. The admin can see all the logs about vital information such as who created a particular record and when it was updated. The page shows the latest activities with 10 logs per page as default, users can also select different options to see 25 or 50 logs per page. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Report Page 
 
-## Learn More
+The report page shows vital statistics on business operations. The first functionality that the page has is the CSV file export. Only users with permission can access the report page and export report files. Users can select a category of the records to download all the records belonging to the selected category. They can also filter records by selecting a date range when the records are entered into the system. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Navigation Menu 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The navigation menu on the top of the pages allows users to navigate through the system smoothly and easily. The menu has the following items: 
 
-### Code Splitting
+Home – Navigates the user to the Home Page. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Add Item – Navigates the user to Add Item Page. 
 
-### Analyzing the Bundle Size
+Help – Navigates the user to Help Page. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Report – Navigates the user to Report Page 
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Manage User – Navigates the user to the Log Page.  
