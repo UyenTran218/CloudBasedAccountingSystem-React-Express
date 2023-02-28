@@ -1,4 +1,4 @@
-# Accounting System
+## Features
 
 ### Adding a new user 
 
@@ -46,3 +46,4 @@ The log page shows activity logs of the system containing information about user
 
 The report page shows vital statistics on business operations. The first functionality that the page has is the CSV file export. Only users with permission can access the report page and export report files. Users can select a category of the records to download all the records belonging to the selected category. They can also filter records by selecting a date range when the records are entered into the system. 
 
+![alt text](https://github.com/UyenTran218/AccountingSystem-React-Express/blob/main/src/Report.JPG?raw=true)
